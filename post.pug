@@ -1,0 +1,14 @@
+extends componentes/plantilla.pug
+block contenido
+	.container
+		aside
+			h3 Menu
+			ul
+				each enlace in enlaces
+					li
+						a(href="/")=enlace
+		article
+			h2 #{titulos[0]}
+			p Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aut consectetur, aperiam distinctio fugiat nam, tempora at libero ut culpa, numquam illum maxime. Laboriosam excepturi aperiam aspernatur necessitatibus ratione nostrum!
+			p Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus incidunt praesentium tempora excepturi, hic illo labore ad eum quaerat nemo aliquam saepe iure ducimus? Perferendis beatae commodi explicabo incidunt natus.
+			a.boton Leer más
